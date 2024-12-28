@@ -1,0 +1,17 @@
+[project]
+name = "supernotes-to-obsidian"
+version = "0.1.0"
+description = "Import Supernotes exports into Obsidian daily notes"
+authors = [
+    {name = "Alex Howard", email = ""}
+]
+dependencies = [
+    "mcp",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+supernotes-import = "supernotes_to_obsidian.main:main"
